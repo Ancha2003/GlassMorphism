@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: url(img.png);
+        }
+        div{
+            display: flex;
+          justify-content: space-evenly;
+          flex-wrap: wrap;
+          margin-top: 50px;
+        }
+        .box1{
+            display: grid;
+            place-items: center;
+            justify-content: space-evenly;
+            height: 300px;
+            width: 300px;
+            border: 2px solid rgba(255, 255, 255, 0.468);
+            background-color: rgba(255, 255, 255, 0.244);
+            backdrop-filter: blur(10px);
+            box-shadow: 10px 10px 10px  rgba(255, 255, 255, 0.18) ;
+            box-shadow: -10px -10px 8px rgba(255, 255, 255, 0.326);
+            color: rgba(1, 50, 135, 0.961);
+            border-radius: 10%;
+            
+        }
+        .box1 p{
+            text-align: center;
+        }
+        .box1:hover{
+            height: 310px;
+            width: 310px;
+        }
+        .box1:nth-child(1){
+            transform: skewX(10deg);
+        }
+        .box1:nth-child(3){
+            transform: skewY(5deg);
+        }
+        .box1  button{
+             height: 35px;
+             width: 80px;
+             border-radius: 40%;
+             border: 1px solid rgba(255, 255, 255, 0.058);
+             background-color: rgba(255, 255, 255, 0.6);
+        }
+        .box1 button:hover{
+            height: 38px;
+            width: 85px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div>
+        <div class="box1">
+           <h4>Priyanka chaudhary</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod in harum quaerat consectetur nisi excepturi eius commodi debitis voluptatem. Provident.</p>
+            <button>About</button>
+         </div>
+        <div class="box1">
+        <h4>Alka Patel</h4> 
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis incidunt totam deserunt architecto dolorum accusantium nam nesciunt vero error repellat?</p>  
+        <button>About</button> 
+        </div>
+        <div class="box1">
+            <h4>Anushka Raj</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos nemo voluptate accusantium tempore optio facere assumenda! Natus enim perferendis molestias!</p>
+            <button>About</button>
+        </div>
+    </div>
+</body>
+</html>
